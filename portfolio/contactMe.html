@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact Me</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body{
+background-image: url('contactbg.jpg');
+background-position: absolute;
+background-repeat: no-repeat;
+background-size: cover;}
+td{text-align:center;padding:15px;background-color:rgb(0,213,255);
+color:#black;font-size:25px;}
+.button {
+  background-color: rgb(0,213,255); /* Green */
+  border: none;
+  color:black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bolder;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border: 2px solid black;
+}
+
+
+
+
+.button:hover {background-color: black;
+color:rgb(0,213,255);
+border: 2px solid rgb(0,213,255);
+}
+.topnav {
+        
+        background-color:rgb(0,213,255);
+        
+  
+  top: 0;
+
+ 
+  font-size: 20px;
+      }
+      
+      .topnav a {
+        float: right;
+        color: black;
+        text-align: center;
+        padding: 24px 26px;
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: bolder;
+      }
+      
+      .topnav a:hover {
+        background-color:black;
+        color:rgb(0,213,255);
+      }
+      
+      
+      
+      .topnav-right {
+        float: right;
+      }
+     
+      
+.logo{
+  
+  
+  vertical-align: middle;
+        color:black;
+        text-decoration: none;
+        font-size: 17px;
+       text-align: center;
+        height: 80px;
+        width:80px;
+        margin-right: 5px;
+}
+
+.logo:hover {
+  box-shadow: 0 0 2px 1px black;
+  border: 2px solid black;
+  opacity: 0.1;
+}
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  
+  text-align: center;
+  text-decoration: none;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+.fa-google {
+  background-color:black;
+  color: rgb(0,213,255);
+}
+
+.fa-linkedin {
+ background-color:black;
+  color: rgb(0,213,255);
+}
+
+
+
+.fa-instagram {
+  background-color:black;
+  color: rgb(0,213,255);
+}
+.fa-whatsapp {
+  background-color:black;
+  color: rgb(0,213,255);
+}
+.foot{
+    padding:30px;
+	background-color:rgb(0,213,255);
+  text-align: center;
+  margin-top: 20px;}
+</style>
+</head>
+<body>
+<form method="post" action="contactMe.php">
+    <div class="topnav">
+        
+        <img class="logo" src="port.png" alter="logo" usemap="#homePageNav"><font style="color:black;font-weight: bolder;font-size: 35px;font-family:Verdana;">   Jeevitha Bethulakshmi
+        </font>
+<map name="homePageNav">
+<area shape="rect" coords="0,0,80,80" alt="HomePage" href="home.html">
+   
+    
+    <div class="topnav-right">
+    <a href="contactMe.html">Contact</a>
+    
+    <a href="articles.html">Articles</a>
+    
+      <a href="skills.html">Skills</a>
+      
+    </div>
+  </div>
+ 
+<table width="40%" style="background-color:rgb(0,213,255);border: 2px solid black;margin-top: 40px;margin-left: 50px;">
+<tr>
+
+<td colspan="2" style="color:black;font-size:40px;font-weight:strong;text-align:center;font-family:cursive;">
+Get In Touch!
+<tr>
+<td>Email
+<td><input type="email" placeholder="Email" name="email" style="font-size:25px;background-color: black;color: rgb(0,213,255);" required>
+
+<tr>
+<td>Name
+<td><input type="text" placeholder="Name" name="name" style="font-size:25px;background-color: black;color: rgb(0,213,255);">
+<tr>
+<td>Message
+<td><textarea rows="5" column="1000" name="message" style="font-size:25px;background-color: black;color: rgb(0,213,255);"></textarea>
+
+<tr>
+
+<tr>
+<td>
+<td>
+<input type="submit" value="Add" name="add" class="button">
+</table>
+<div class="foot">
+    <a href="#" class="fa fa-google"></a>
+    <a href="#" class="fa fa-linkedin"></a>
+    
+    <a href="#" class="fa fa-instagram"></a>
+    <a href="#" class="fa fa-whatsapp"></a>
+    </div>

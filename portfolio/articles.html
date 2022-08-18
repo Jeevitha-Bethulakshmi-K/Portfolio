@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Articles</title>
+        <style>
+            body{
+                background-image: url('articlesbg.jpg');
+                background-repeat: no-repeat;
+                background-position: absolute;
+                background-size:cover;
+            }
+            .header {
+        
+        background-color:rgb(0,213,255);
+        
+  
+  top: 0;
+
+ 
+  font-size: 20px;
+      }
+      
+      .header a {
+        float: right;
+        color: black;
+        text-align: center;
+        padding: 24px 26px;
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: bolder;
+      }
+      
+      .header a:hover {
+        background-color:black;
+        color:rgb(0,213,255);
+      }
+      
+      
+      
+      .header-right {
+        float: right;
+      }
+     
+      
+.logo{
+  
+  
+  vertical-align: middle;
+        color:black;
+        text-decoration: none;
+        font-size: 17px;
+       text-align: center;
+        height: 80px;
+        width:80px;
+        margin-right: 5px;
+}
+
+.logo:hover {
+  box-shadow: 0 0 2px 1px black;
+  border: 2px solid black;
+  opacity: 0.1;
+}
+    /* Basic styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root{
+    --bg-color: rgb(0,213,255);
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
+  color: black;
+  background-color: var(--bg-color);
+  box-shadow: 0 4px 8px 0 rgb(0,213,255), 0 6px 20px 0 rgb(0,213,255);
+  font-family: 'Maitree', serif;
+  margin-top: 10px;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+/* title styles */
+.home-title span{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    line-height: 1.2;
+}
+
+.home-title span::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 400px;
+    background: black;
+    animation: a-ltr-after 2s cubic-bezier(.77,0,.18,1) forwards;
+    transform: translateX(-101%);
+}
+
+.home-title span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 400px;
+    background: var(--bg-color);
+    animation: a-ltr-before 2s cubic-bezier(.77,0,.18,1) forwards;
+    transform: translateX(0);
+}
+
+.home-title span:nth-of-type(1)::before,
+.home-title span:nth-of-type(1)::after{
+    animation-delay: 1s;
+}
+
+.home-title span:nth-of-type(2)::before,
+.home-title span:nth-of-type(2)::after{
+    animation-delay: 1.5s;
+}
+
+@keyframes a-ltr-after{
+    0% {transform: translateX(-100%)}
+    100% {transform: translateX(101%)}
+}
+
+@keyframes a-ltr-before{
+    0% {transform: translateX(0)}
+    100% {transform: translateX(200%)}
+}
+
+div.gallery {
+  margin: 5px;
+  border: 6px solid rgb(0,213,255);
+  box-shadow: 0 4px 8px 0 rgb(0,213,255), 0 6px 20px 0 rgb(0,213,255);
+  
+}
+
+div.gallery:hover {
+  border: 4px solid black;
+}
+
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  color:rgb(0,213,255);
+}
+.high{
+    font-size: 60px;
+    color:rgb(0,213,255);
+    font-weight: bolder;
+    font-family: 'Times New Roman';
+}
+#more {display: none;}
+.projmain{
+    
+    margin-top: 50px;
+}
+.projtable
+{
+border:2px solid rgb(0,213,255);
+box-shadow: 0 4px 8px 0 rgb(0,213,255), 0 6px 20px 0 rgb(0,213,255);
+background-color: rgb(0,213,255);
+margin-top: 10px;
+margin-bottom:20px;
+padding:20px;
+}
+
+.topnav {
+        
+        background-color:rgb(0,213,255);
+        
+  
+  top: 0;
+
+ 
+  font-size: 20px;
+      }
+      
+      .topnav a {
+        float: right;
+        color: black;
+        text-align: center;
+        padding: 24px 26px;
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: bolder;
+      }
+      
+      .topnav a:hover {
+        background-color:black;
+        color:rgb(0,213,255);
+      }
+      .button {
+  background-color: rgb(0,213,255); /* Green */
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border: 2px solid black;
+}
+
+
+
+
+.button:hover {background-color: black;
+color:rgb(0,213,255)}
+.container{
+    position:relative;
+   width:50%; 
+}
+.projimg{
+    height:200px;
+    width: 200px;
+    border-radius: 50px;
+    border: 2px solid black;
+    box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+
+    
+  opacity: 1;
+  display: block;
+  
+  
+  transition: .5s ease;
+  backface-visibility: hidden;
+  
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  margin-left: 100px;
+  position: absolute;
+  top: 50%;
+border:2px solid rgb(0,213,255);
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .projimg {
+  opacity: 0.5;
+  background-color: black;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  
+  color: rgb(0,213,255);
+  
+  padding: 14px 20px;
+  text-decoration:none;
+ 
+        background-color:black;
+       
+ 
+
+  font-size: 20px;
+}
+.text a {
+        
+        color: rgb(0,213,255);
+        text-align: center;
+        
+        text-decoration: none;
+       
+      }
+
+
+        </style>
+        <script>
+            function myFunction1() {
+  
+  var moreText = document.getElementById("more1");
+  var btnText = document.getElementById("myBtn1");
+
+  if (moreText.style.display === "none") {
+    
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  } else {
+    
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  }
+}
+function myFunction2() {
+  
+  var moreText = document.getElementById("more2");
+  var btnText = document.getElementById("myBtn2");
+
+  if (moreText.style.display === "none") {
+    
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  } else {
+    
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  }
+}
+function myFunction3() {
+  
+  var moreText = document.getElementById("more3");
+  var btnText = document.getElementById("myBtn3");
+
+  if (moreText.style.display === "none") {
+    
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  } else {
+    
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  }
+}
+            </script>
+    </head>
+    <body>
+        <table style="width: 100%;"><tr><td>
+                 <div class="header">
+        
+            <img class="logo" src="port.png" alter="logo" usemap="#homePageNav"><font style="color:black;font-weight: bolder;font-size: 35px;font-family:Verdana;">   Jeevitha Bethulakshmi
+            </font>
+    <map name="homePageNav">
+    <area shape="rect" coords="0,0,80,80" alt="HomePage" href="home.html">
+       
+        
+    <div class="header-right">
+      <a href="contactMe.html">Contact</a>
+      
+      <a href="articles.html">Articles</a>
+      
+        <a href="skills.html">Skills</a>
+        
+      </div>
+      </div>
+    </table>
+      
+        <div class="main">
+        <h1 class="home-title">
+            
+            <span>GET READY TO EXPLORE </span><br>
+            <span>THE ARTICLES ABOUT JEEVITHA</span>
+          </h1>
+        </div>
+    
+        <center>
+            <p class="high">HIGHLIGHTS</p>
+        <table style="margin-top:30px" cellspacing="5px">
+            <tr>
+                
+                <td>
+        <div class="gallery">
+            <a target="_blank" href="1.PNG">
+              <img src="1.PNG" alt="Times Of India" width="300px" height="300px">
+            </a>
+            <div class="desc">Times Of India</div>
+          </div>
+                </td>
+        <td>
+          <div class="gallery">
+            <a target="_blank" href="2.PNG">
+              <img src="2.PNG" alt="project2" width="300px" height="300px">
+            </a>
+            <div class="desc">GlobalLogic</div>
+          </div>
+        </td>
+        <td>
+          <div class="gallery">
+            <a target="_blank" href="img_lights.jpg">
+              <img src="3.PNG" alt="project3" width="300px" height="300px">
+            </a>
+            <div class="desc">Firstpost</div>
+          </div>
+        </td>
+    
+          </tr>
+        </table>
+        </center>
+        <div class="projmain">
+            <center>
+                            <table class="projtable" width="1300px">
+                <tr>
+                    <td>
+                        <div class="container">
+                            <img src="2.PNG" alt="teamPhoto" class="projimg">
+                            
+                          </div>   
+                    </td>
+                    <td width="1000px">
+                        <p>Today we share the story of Jeevitha our shining star under the Parivartan 2.0 program. Despite being economically underprivileged, Jeevitha’s undeterred passion to make it big resulted in securing 1,047th rank in the <span id="more1" style="display: none;">state engineering entrance exams; 96 % and 97% in 10th & 12th; & winning numerous competitions in Science, Technology, Arts and Literature.
+
+                          Her project through 'Atal Tinkering Lab' got picked among the TOP 30 projects in India and she got an opportunity to interact with our honorable Prime Minister. She was also selected as one of the top 25 students across Tamil Nadu & went on to pursue an IT course at Madras Institute of Technology. However, her financial constraints limited her from achieving her dreams. FFEIT & GlobalLogic's Parivartan 2.0 Scholarship program helped fund a scholarship for Jeevitha that has put her back on the path of success & excellence. We are proud to share that Jeevithascored 9.76 CGPA in the first semester and is an inspiration for many!
+                          </span></p>
+<button onclick="myFunction1()" id="myBtn1" class="button">Read more</button>
+
+                        
+                    </td>
+                    
+                </tr>
+            </table>
+            <table class="projtable" width="1300px">
+                <tr>
+                    
+                    <td width="1000px">
+                        <p>TUTICORIN: A group of students from Subbiah Vidyalayam girls ..<span id="more2" style="display: none;">
+
+                          Read more at:
+                          <a href="http://timesofindia.indiatimes.com/articleshow/64486091.cms?frmapp=yes&from=mdr&utm_source=contentofinterest&utm_medium=text&utm_campaign=cppst">Times Of India</a></span></p>
+                        <button onclick="myFunction2()" id="myBtn2" class="button">Read more</button>
+                        
+                    </td>
+                    <td>
+                        <div class="container">
+                            <img src="1.PNG" alt="teamPhoto" class="projimg">
+                            <div class="middle">
+                              
+                          </div>      
+                       </td>
+                    
+                </tr>
+            </table>
+            <table class="projtable" width="1300px">
+                <tr>
+                    <td>
+                        <div class="container">
+                            <img src="3.PNG" alt="teamPhoto" class="projimg">
+                            
+                          </div>      
+                    </td>
+                    <td width="1000px">
+                        <p>A 14-year-old class 10 student, K Jeevitha Bethu Lakshmi, is the star pupil at her school, the Subbiah Vidyalayam in the Tuticorin district, in Tamil Nadu. She and two schoolmates were chosen, by the over 80-year-old school, to discuss their school project with Prime Minister Narendra Modi.
+
+                          The three girls, on Wednesday, spoke to Modi about an automatic irrigation system powered by solar panels.<span id="more3" style="display: none;"> Jeevitha told the PM that they have developed a prototype that worked flawlessly in the school's lab - one of 171 Atal Tinkering Labs set up across schools in the southern state.
+                          
+                          “Our school has not received such attention before,” principal MS Santhiny Kawsel told Firstpost. "We have won awards for elocution, sports but not for an innovative project. Now we have!"
+                          
+                          Subbiah Vidyalayam is an all-girls school with over 1,000 students. At the school's Atal Tinkering Lab, set up with Central government-support, students from classes 6 -12 experiment with ideas. Jeevitha and her classmates came up with an idea to build a solar-powered automatic irrigation system, which they put together with help from their teachers, Ananthi and Priyadarshini.</span></p>
+                        <button onclick="myFunction3()" id="myBtn3" class="button">Read more</button>
+                        
+                    </td>
+                    
+                </tr>
+            </table>
+        </center>
+
+        </div>
+          
+    </body>
+</html>
